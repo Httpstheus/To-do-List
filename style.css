@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: rgb(38, 35, 35);
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+h1:hover {
+    color: #00BFFF;
+    transition: 0.5s;
+}
+
+.container {
+    border: 2px solid #fff;
+    padding: 30px 40px;
+    width: auto;
+    min-width: 500px;
+    border-radius: 5px;
+}
+
+.new-task-container {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    display: flex;
+}
+
+.new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid rgb(67, 61, 61);
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-container input:focus {
+   outline: none;
+   border-color: #bf3b3b;
+}
+
+.new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #00BFFF;
+    background-image: linear-gradient(315deg, #22a8d4 0%, #2e7e99 74%);
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.new-task-button:hover {
+    
+    background-color: #00BFFF;
+    background-image: linear-gradient(315deg, #22a8d4 0%, #2e7e99 74%);
+    transition: 2.0s;
+}
+
+.tasks-container {
+    background: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+}
+/* task intem*/
+
+.task-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   margin-bottom: 6px;
+   margin-top: 6px;
+}
+
+.task-item i {
+    
+    background-color: #00BFFF;
+    background-image: linear-gradient(315deg, #22a8d4 0%, #2e7e99 74%);
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10-px;
+}
+
+i:hover {
+    
+    background-color: #00BFFF;    background-image: linear-gradient(315deg, #22a8d4 0%, #2e7e99 74%);
+
+    transition: 2.0s;
+}
+
+/* Utilits */
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder{
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
